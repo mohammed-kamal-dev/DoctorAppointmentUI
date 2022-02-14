@@ -1,0 +1,49 @@
+
+<button class="btn btn-info btn-lg" style="margin-left: 10px" (click)="goToForm()">Add Appointment</button>
+<!-- /.card-header -->
+  <div class="card-body">
+    <table class="table ">
+      <thead>                  
+        <tr>
+          <th style="width: 10px">#</th>
+          <th>Patient Name</th>
+          <th>Doctor Name</th>
+          <th>Day</th>
+          <th>SessionTime</th>
+          <th>WaitingTime</th>
+          <th>Period</th>
+
+          <th>Details</th>
+          <th>Edit</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Mohammed ali</td>
+          <td>Omar hassan</td>
+          <td>12/2/2022</td>
+          <td>15 minutes</td>
+          <td>5 minutes</td>
+          <td>Morning</td>
+          
+          <td><button type="button" id="details" class="btn btn-primary" (click)="details()">Details</button></td>
+          <td><button type="button" id="update" class="btn btn-success">Update</button></td>
+          <td><button type="button" id="delete" class="btn btn-danger">Delete</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div class="card-footer clearfix">
+        <ul class="pagination pagination-sm m-0 float-right">
+          <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+        </ul>
+      </div>
+  </div>
+  <!-- /.card-body -->
